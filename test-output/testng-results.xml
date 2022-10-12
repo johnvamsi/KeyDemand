@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-11T16:58:41 IST" name="Default suite" finished-at="2022-10-11T16:59:11 IST" duration-ms="29308">
+    <groups>
+    </groups>
+    <test started-at="2022-10-11T16:58:41 IST" name="Default test" finished-at="2022-10-11T16:59:11 IST" duration-ms="29308">
+      <class name="testCases.TC_BrokerRegistration_Test">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:testCases.TC_BrokerRegistration_Test@2c1b194a]" started-at="2022-10-11T16:58:41 IST" name="SetUp" finished-at="2022-10-11T16:59:06 IST" duration-ms="24633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="BrokerSignup_Test()[pri:0, instance:testCases.TC_BrokerRegistration_Test@2c1b194a]" started-at="2022-10-11T16:59:06 IST" name="BrokerSignup_Test" finished-at="2022-10-11T16:59:11 IST" duration-ms="4604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrokerSignup_Test -->
+        <test-method is-config="true" signature="Tear()[pri:0, instance:testCases.TC_BrokerRegistration_Test@2c1b194a]" started-at="2022-10-11T16:59:11 IST" name="Tear" finished-at="2022-10-11T16:59:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tear -->
+      </class> <!-- testCases.TC_BrokerRegistration_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
