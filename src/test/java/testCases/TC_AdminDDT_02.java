@@ -44,28 +44,28 @@ public class TC_AdminDDT_02 extends KeyDemand_BaseClass{
 		String Sucess_msg=aa.getSuccessMessage();
 		if(Value.equals("Valid"))
 		{
-			 if(Sucess_msg.equals("Relationship Manager added successfully.")) 
-				{
-					Assert.assertTrue(true);
-				}
-				else
-				{
-					Assert.assertTrue(false);
-				}
+		 if(Sucess_msg.equals("Relationship Manager added successfully.")) 
+			{
+				Assert.assertTrue(true);
+			}
+			else
+			{
+				Assert.assertTrue(false);
+			}
 			
 		}
 		
 		if(Value.equals("Invalid"))
 		{
-			 if(Sucess_msg.equals("Relationship Manager added successfully."))
-				{
-					captureScreen(driver,"Admintest");
-					Assert.assertTrue(false);
-				}
-				else
-				{
-					Assert.assertTrue(true);
-				}
+						 if(Sucess_msg.equals("Relationship Manager added successfully."))
+							{
+										captureScreen(driver,"Admintest");
+										Assert.assertTrue(false);
+							}
+							else
+							{
+										Assert.assertTrue(true);
+							}
 		}
 		Thread.sleep(5000);
 		
@@ -81,10 +81,10 @@ public class TC_AdminDDT_02 extends KeyDemand_BaseClass{
 		String logindata[][]=new String[rows][cols];
 		for(int r=1;r<=rows;r++)
 		{
-			for(int c=0;c<cols;c++)
-			{
-				logindata[r-1][c]=XLUtils.getCellData(xlpath, "Sheet2", r, c);
-			}
+							for(int c=0;c<cols;c++)
+							{
+											logindata[r-1][c]=XLUtils.getCellData(xlpath, "Sheet2", r, c);
+							}
 		}
 		
 		

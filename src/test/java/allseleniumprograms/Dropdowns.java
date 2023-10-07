@@ -2,6 +2,7 @@ package allseleniumprograms;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,6 +39,8 @@ public class Dropdowns {
 	    dropdown.selectByValue("104");
 	    Thread.sleep(3000);
 	    dropdown.selectByVisibleText("United States");
+	  WebElement firstOption=  dropdown.getFirstSelectedOption();
+	 System.out.println(firstOption.getText());
 		
 
 	}

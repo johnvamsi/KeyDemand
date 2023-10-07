@@ -94,7 +94,7 @@ public class AddBuyer {
 	 @FindBy(xpath="(//table[@class='table'])[1]//tr[1]//td[2]")
 	  public  WebElement ele_verifyname;
 	 
-	 
+	 //Action methods
 	 public void clickCustomersTab()
 	 {
 		 clk_Customerspage.click();

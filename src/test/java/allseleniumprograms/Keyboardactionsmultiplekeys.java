@@ -44,6 +44,16 @@ public class Keyboardactionsmultiplekeys {
 	aa.keyUp(Keys.CONTROL);
 	aa.perform();
 	
+	//verification 
+    if((Text1.getText()).equals(Text2.getText()))
+    {
+    	System.out.println("Both text are Same");
+    }
+    else
+    {
+    	System.out.println("Both texts are not equal");
+    }
+	
 
 	}
 

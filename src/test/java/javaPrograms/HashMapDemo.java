@@ -1,13 +1,17 @@
 package javaPrograms;
 
 import java.util.HashMap;
-
+/*
+ * Data Can be Stored in The Form Key and value 
+ * Insertion order is not possible-(index not followed)
+ * key is Unique and we can have duplicate values
+ */
 public class HashMapDemo {
 
 	public static void main(String[] args) {
 	
 		//HashMap<String,Integer> map=new HashMap<String,Integer>();
-		HashMap map=new HashMap();
+		/*HashMap map=new HashMap();
 		
 		map.put("100","Vamsi");
 		map.put("101","Kkkk");
@@ -42,10 +46,22 @@ public class HashMapDemo {
 		}
 		
 		map.clear();
+		System.out.println(map);*/
+		
+		HashMap<String,Integer> map = new HashMap();
+		map.put("Vamsi", 1);
+		map.put("Krsihna", 2);
+		map.put("Automation", 3);
+		map.put("Testing", 4);
+		map.put("apiautomation", 5);
+		map.put("apiautomationTest", 0);
+		
 		System.out.println(map);
-		
-		
-		
+		System.out.println(map.get("Automation"));
+	boolean bb=	map.containsKey("apiautomationTest");
+		System.out.println(bb);
+	
+		System.out.println(map.get("apiautomationTest"));
 		
 
 	}

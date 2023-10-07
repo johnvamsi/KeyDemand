@@ -19,6 +19,7 @@ public class Slider {
 		WebElement minslider =driver.findElement(By.xpath("//span[1]"));
 		System.out.println(minslider.getLocation());
 		Actions aa= new Actions(driver);
+		
 		aa.dragAndDropBy(minslider, 100, 0).perform();
 		
 		WebElement maxslider=driver.findElement(By.xpath("//span[2]"));

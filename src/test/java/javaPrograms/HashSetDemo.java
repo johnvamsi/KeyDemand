@@ -46,10 +46,10 @@ public class HashSetDemo {
 		//set.clear();
 		//System.out.println(set);
 		System.out.println(set.isEmpty());
-//		for(Object x:set)
-//		{
-//			System.out.println(x);
-//		}
+		for(Object x:set)
+		{
+			System.out.println(x);
+		}
 		
 		
 	

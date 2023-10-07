@@ -8,20 +8,23 @@ import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FileUpload2 {
 
 	public static void main(String[] args) throws AWTException {
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
+		
+		 WebDriverManager.chromedriver().setup();
+		  WebDriver driver = new ChromeDriver();
 	     
 	     driver.get("https://www.monsterindia.com/");
 	     driver.manage().window().maximize();
 	     
-	     driver.findElement(By.xpath("//span[@class='uprcse semi-bold']")).click();
+	     driver.findElement(By.xpath("//div[@class='heroSection-buttonContainer_secondaryBtn__text']")).click();
 	      
 	     //Aprpaoch1 - Using sendKeys() method
 	     //driver.findElement(By.xpath("//input[@id='file-upload']")).sendKeys("C:\\Users\\HP\\Downloads\\MANUAL TESTING QUESTIONS new (1).pdf");
@@ -34,7 +37,7 @@ public class FileUpload2 {
 	   //put path to file in a clipboard
 	     StringSelection ss=new StringSelection("C:\\Users\\HP\\Downloads\\MANUAL TESTING QUESTIONS new (1).pdf");
 	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-	     
+	      
 	    //Robot class
 	     Robot rb=new Robot();
 	     rb.delay(300);

@@ -23,15 +23,17 @@ public class Autosuggestiondropdown {
 			Thread.sleep(5000);
 		
 			
-			  List<WebElement> options=driver.findElements(By.xpath("//li[@class='sbct']//div[@role='option']"));
+			 // List<WebElement> options=driver.findElements(By.xpath("//li[@class='sbct']//div[@role='option']"));
+			  List<WebElement> options=driver.findElements(By.xpath("//div[@class='pcTkSc']"));
 			  
 			 System.out.println("Total suggested options :" +  options.size()); 
 			 for(WebElement option:options)
 			 {
-			      if(option.getText().equals("selenium"))
-			          {
-				         option.click(); break; 
-			           } 
+				      if(option.getText().equals("selenium"))
+				          {
+					         option.click(); 
+					         break; 
+				           } 
 			 
 			  }
 			 

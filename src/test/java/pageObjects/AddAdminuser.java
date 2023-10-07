@@ -10,15 +10,16 @@ import org.openqa.selenium.support.ui.Select;
 public class AddAdminuser {
 	
 	 WebDriver driver;
-	 public AddAdminuser(WebDriver driver)
-	{
-		this.driver=driver;
+	  public AddAdminuser(WebDriver driver) 
+	 {
+			this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	 
-	 //page objects
+
+	//page objects
 	 @FindBy(xpath="//div[normalize-space()='Admin Team']")
 	 WebElement clk_AdminTeam;
+	
 	 
 	 @FindBy(xpath="//span[normalize-space()='Add Admin']")
 	 WebElement clk_Addadmin;

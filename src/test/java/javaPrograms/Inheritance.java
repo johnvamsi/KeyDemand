@@ -8,6 +8,11 @@ class singleinheritance
 		b=y;
 		System.out.println(b);
 	}
+	
+	static void print()
+	{
+		System.out.println("This is print method");
+	}
 }
 
 public class Inheritance extends singleinheritance{
@@ -23,6 +28,9 @@ public class Inheritance extends singleinheritance{
 		Inheritance i=new Inheritance();
 		i.display(10);
 		i.show(20);
+		
+		//i.print();
+		print();
 		
 		
 	

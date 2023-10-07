@@ -14,18 +14,18 @@ public class Alerts {
 		ChromeDriver driver = new ChromeDriver();
 
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
-		driver.manage().window().maximize();
+		driver.manage(  ).window().maximize();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/button[1]")).click();
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/ul/li[3]/button")).click();
 		driver.switchTo().alert().sendKeys("Automation testing ");
 		Thread.sleep(3000);
 		
 		Alert myalert=driver.switchTo().alert();
 		System.out.println(myalert.getText());
 		Thread.sleep(5000);
-		myalert.accept();
+		myalert.accept(    );
 		
-		driver.close();
+		//driver.close();
 		
 		
 		

@@ -66,8 +66,8 @@ public class ExtentReportManager implements ITestListener
 		
 		try
 		{
-		String screenshotPath=System.getProperty("user.dir")+"\\screenshots\\"+result.getName()+".png";
-		test.addScreenCaptureFromPath(screenshotPath);
+			String screenshotPath=System.getProperty("user.dir")+"\\screenshots\\"+result.getName()+".png";
+			test.addScreenCaptureFromPath(screenshotPath);
 		}
 		catch(Exception e)
 		{

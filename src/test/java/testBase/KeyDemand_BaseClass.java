@@ -31,22 +31,19 @@ public class KeyDemand_BaseClass {
 		
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		//driver.get("https://devkeydemands.underdev.in/login");//-superadmin
-		driver.get("https://devuserkeydemands.underdev.in/");//--user
+		driver.get("https://devkeydemands.underdev.in/login");//-superadmin
+		//driver.get("https://devuserkeydemands.underdev.in/");//--user
 		Thread.sleep(3000);
 		driver.manage().window().maximize();
 		
 		logger.info("Launched Chrome Browser");
-		
-		
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@AfterClass
 	public void Tear()
 	{
-		// driver.close();
+		//driver.close();
 		//driver.quit();
 	}
 	
@@ -69,11 +66,18 @@ public class KeyDemand_BaseClass {
 		return(Long.parseLong(generatedString2));
 	}
 	
+	public String randomAlphaNumeric(int count )
+	{
+		String generatedString2=RandomStringUtils.randomAlphanumeric(count);
+		return(generatedString2);
+	}
+	
+	
 	public  void captureScreen(WebDriver driver, String tname) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File target = new File(System.getProperty("user.dir") + "\\screenshots\\" + tname + ".png");
-		FileUtils.copyFile(source, target);
+		FileUtils.copyFile(source, target);	
 		
 		
 		

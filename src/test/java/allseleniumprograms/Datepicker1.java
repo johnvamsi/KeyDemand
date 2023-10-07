@@ -19,7 +19,7 @@ public class Datepicker1 {
 		driver.switchTo().frame(0);
 		driver.findElement(By.id("datepicker")).click();
 		
-		String year="2022";
+		String year="2023";
 		String month="December";
 		String date="23";
 		
@@ -84,7 +84,7 @@ public class Datepicker1 {
 		
 		
 		
-		driver.close();
+		//driver.close();
 		
 
 	}

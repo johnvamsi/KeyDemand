@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_BrokerRegistration_Test">
+      <class name="testCases.TC_Login_Test">
         <methods>
           <include name="SetUp"/>
-          <include name="BrokerSignup_Test"/>
           <include name="Tear"/>
+          <include name="Test_Login" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- testCases.TC_BrokerRegistration_Test -->
+      </class> <!-- testCases.TC_Login_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

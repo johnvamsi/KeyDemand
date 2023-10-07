@@ -20,21 +20,16 @@ public class WriteDatainToExcel {
 		{
 			XSSFRow row=sheet.createRow(r);
 			
-			for(int c=0; c<3;c++)
-			{
-				XSSFCell cell=row.createCell(c);
-				cell.setCellValue("welcome");
-				
-			}
+					for(int c=0; c<3;c++)
+					{
+								XSSFCell cell=row.createCell(c);
+								cell.setCellValue("welcome");
+								
+					}
 		}
 		wb.write(file);
 		wb.close();
 		file.close();
-		
-		
-		
-		
-		
 		
 		
 		

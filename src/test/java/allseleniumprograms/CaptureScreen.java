@@ -20,16 +20,17 @@ public class CaptureScreen {
 		ChromeDriver driver = new ChromeDriver();
 		//WebDriver driver = new ChromeDriver();
 
-    	driver.get("https://demo.nopcommerce.com/");
+    	//driver.get("https://demo.nopcommerce.com/");
+		driver.get("https://devuserkeydemands.underdev.in/");
     	driver.manage().window().maximize();
-    	Thread.sleep(3000);
+    	Thread.sleep(2000);
     	
     	//Full page screenshot 
     	
-		/*TakesScreenshot ts = driver;//if you are using chromedriver
+		TakesScreenshot ts = driver;//if you are using chromedriver
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File trg = new File(System.getProperty("user.dir") + "\\screenshots\\fullpage.png");
-		FileUtils.copyFile(src, trg);*/
+		File trg = new File(System.getProperty("user.dir") + "\\screenshots\\MyTestCase.png");
+		FileUtils.copyFile(src, trg);
     	
     	/*WebElement particularpage= driver.findElement(By.xpath("//div[@class='product-grid home-page-product-grid']"));
     	TakesScreenshot ts=(TakesScreenshot)driver;/if you are using webdriver
@@ -38,10 +39,10 @@ public class CaptureScreen {
     	FileUtils.copyFile(Src, Trg);*/
     	
     	
-    	WebElement Logo = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]"));
-    	File Src= Logo.getScreenshotAs(OutputType.FILE);
-    	File Trg= new File(System.getProperty("user.dir")+"\\screenshots\\logos.png");
-    	FileUtils.copyFile(Src, Trg);
+//    	WebElement Logo = driver.findElement(By.xpath("//img[@alt=\"nopCommerce demo store\"]"));
+//    	File Src= Logo.getScreenshotAs(OutputType.FILE);
+//    	File Trg= new File(System.getProperty("user.dir")+"\\screenshots\\logos.png");
+//    	FileUtils.copyFile(Src, Trg);
     	
     	
     	
@@ -50,7 +51,7 @@ public class CaptureScreen {
     	
     	
     	
-    	driver.close();
+    	//driver.close();
     	
     	
        

@@ -7,10 +7,10 @@ interface Shape
 	
 	void circle();   // abstract method  , 
 	
-	static void square()   // static method
-	{
-		System.out.println("I am Square");
-	}
+	      static void square() {
+			// TODO Auto-generated method stub
+			
+		}
 	
 		 default void rectangle()   // default method
 		{

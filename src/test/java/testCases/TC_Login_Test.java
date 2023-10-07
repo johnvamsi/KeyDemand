@@ -53,10 +53,10 @@ public class TC_Login_Test extends  KeyDemand_BaseClass{
 		String logindata[][]=new String[rows][cols];
 		for(int r=1;r<=rows;r++)
 		{
-			for(int c=0;c<cols;c++)
-			{
-				logindata[r-1][c]=XLUtils.getCellData(xlpath, "Sheet1", r, c);
-			}
+				for(int c=0;c<cols;c++)
+				{
+						logindata[r-1][c]=XLUtils.getCellData(xlpath, "Sheet1", r, c);
+				}
 		}
 		
 		

@@ -42,7 +42,7 @@ public class StringMethods {
 		System.out.println(s8.equalsIgnoreCase("welcome"));
 		//true this method will wont concentrate on uppercase or lowercase letters it will concentrate only characters
 		
-		//replace() - replace single/ multiple/sequece of characters
+		//replace() - replace single/ multiple/sequence of characters
 		String s="Welcome to selenium automation testing";
 		System.out.println(s.replace('o', 'x'));//Welcxme tx selenium autxmatixn testing
 		System.out.println(s.replace("selenium", "Java"));//Welcome to Java automation testing

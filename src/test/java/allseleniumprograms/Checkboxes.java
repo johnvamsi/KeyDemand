@@ -15,7 +15,8 @@ public class Checkboxes {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://itera-qa.azurewebsites.net/home/automation");
-		driver.manage().window().maximize();
+
+
 		Thread.sleep(3000);
 		List<WebElement> checkboxes =driver.findElements(By.xpath("(//input[@type='checkbox' and contains(@id,'day')])"));
 		System.out.println(checkboxes.size());

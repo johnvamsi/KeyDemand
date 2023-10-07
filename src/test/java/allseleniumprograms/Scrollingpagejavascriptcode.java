@@ -19,8 +19,8 @@ public class Scrollingpagejavascriptcode {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		
 		//1. Scroll down page by pixel
-		
-		/*js.executeScript("window.scrollBy(0,1000)", "");
+		js.executeScript("window.scrollBy(0,3000)", "");
+		/*
 		long value = (Long) js.executeScript("return window.pageYOffset;");
 		System.out.println("Number of pixels moved:" + value); // 3000*/
 		

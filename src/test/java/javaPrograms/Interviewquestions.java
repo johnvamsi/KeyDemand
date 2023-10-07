@@ -5,26 +5,34 @@ import java.util.Scanner;
 public class Interviewquestions {
 
 	public static void main(String[] args) {
-		/*int num=17711771;
+	//int num=17711771;
 		int num=1234;
 		int rev_num=0;
 		while(num!=0)
 		{
 			rev_num=rev_num*10+num%10;
+			System.out.println(rev_num);
 			num=num/10;
 			System.out.println(num);
-			if(rev_num==num)
+			
+		}
+		
+		if(rev_num==num)
 			{
 				System.out.println("Given number is palindrome");
 			}
-		}
-		//Count how many numbers are there in a variable
-		int num=12345678;
+			else
+			{
+			   System.out.println("Given number is  NOT palindrome");
+			}
+			
+		/*Count how many numbers are there in a variable
+		int num1=12345678;
 		int count =0;
 	
-		while(num!=0)
+		while(num1!=0)
 		{
-			num=num/10;
+			num1=num1/10;
 			count++;
 			
 		}
@@ -34,21 +42,21 @@ public class Interviewquestions {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a number:");
 		
-		int num=sc.nextInt();
+		int num1=sc.nextInt();
 		//or 
-	    int num=123456789;
+	    //int num=123456789;
 		int sum=0;
-		while(num>0)
+		while(num1>0)
 		{
-			sum=sum+num%10;
-			num=num/10;
+			sum=sum+num1%10;
+			num1=num1/10;
 			
 		}
 		System.out.println("sum of given number is :"+sum);
 		
 		
 		//Find Number of even and odd digits in a number
-		int num=123456789;
+		/*int num=123456789;
 		int even_count=0;
 		int odd_count=0;
 		while(num>0)

@@ -43,7 +43,7 @@ public class XLUtils {
 		row=ws.getRow(rownum);
 		int cellcount=row.getLastCellNum();
 		wb.close();
-		fi.close();
+		fi  .close();
 		return cellcount;
 	}
 	
@@ -61,7 +61,7 @@ public class XLUtils {
 		{
 			DataFormatter formatter = new DataFormatter();
             data = formatter.formatCellValue(cell);
-            return data;
+          
 		}
 		catch (Exception e) 
 		{
@@ -87,7 +87,7 @@ public class XLUtils {
 		fo=new FileOutputStream(xlfile);
 		wb.write(fo);		
 		wb.close();
-		fi.close();
+		fi  .close();
 		fo.close();
 				
 	}

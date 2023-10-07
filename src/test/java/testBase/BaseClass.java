@@ -81,6 +81,12 @@ public class BaseClass {
 		return (Integer.parseInt(generatedString2));
 	}
 	
+	public String randomAlphaNumeric(int count )
+	{
+		String generatedString2=RandomStringUtils.randomAlphanumeric(count);
+		return(generatedString2);
+	}
+	
 	public void captureScreen(WebDriver driver, String tname) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);

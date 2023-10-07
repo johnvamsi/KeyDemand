@@ -16,14 +16,9 @@ public class WindowHandle1 {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver(); 
 		String link;
-
-		
-		driver.get("https://testautomationpractice.blogspot.com/");
-		
+       driver.get("https://testautomationpractice.blogspot.com/");
 		driver.findElement(By.id("Wikipedia1_wikipedia-search-input")).sendKeys("Selenium");
-		
 		driver.findElement(By.className("wikipedia-search-button")).click();
-		
 		Thread.sleep(3000);
 		
 		List <WebElement>search_results=driver.findElements(By.xpath("//*[@id='wikipedia-search-result-link']/a"));
@@ -37,8 +32,10 @@ public class WindowHandle1 {
 			}
 		
 		Set<String>windowvalues=driver.getWindowHandles();
+	
 		for(String windValue:windowvalues)
 		{
+			
 			System.out.println(windValue);
 		   String Title=	driver.switchTo().window(windValue).getTitle();
 		  System.out.println(Title);
@@ -47,6 +44,7 @@ public class WindowHandle1 {
 				driver.close();
 			}
 				
+		 
 		}
 //		
 //		for(WebElement e:search_results)

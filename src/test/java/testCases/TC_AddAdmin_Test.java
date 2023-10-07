@@ -51,10 +51,10 @@ public class TC_AddAdmin_Test  extends KeyDemand_BaseClass{
 		String reg_Admindata[][] = new String[rows][cols];
 		for(int r=1;r<=rows;r++) 
 		{
-			for(int c=0;c<cols;c++)
-			{
-				reg_Admindata[r-1][c]=XLUtils.getCellData(xlpath, "Admin", r, c);
-			}
+					for(int c=0;c<cols;c++)
+					{
+						reg_Admindata[r-1][c]=XLUtils.getCellData(xlpath, "Admin", r, c);
+					}
 			
 		}
 

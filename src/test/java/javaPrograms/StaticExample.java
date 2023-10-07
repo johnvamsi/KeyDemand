@@ -1,6 +1,6 @@
 package javaPrograms;
 
-import io.opentelemetry.exporter.logging.SystemOutLogExporter;
+
 
 //static keyword is used to avoid duplication and save memory as well as to update variable or methods we can use this keyword
 //Static keyword can be used when any variable or method is shared across all the objects 

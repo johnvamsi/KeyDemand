@@ -2,7 +2,7 @@ package javaPrograms;
 
 class fff
 {
-	void m1(int a)
+	static void m1(int a)
 	{
 		System.out.println(a);
 	}
@@ -14,7 +14,7 @@ class fff
 
 class eee extends fff
 {
-	void m1(int a)				//Overriding
+	static void m1(int a)				//Overriding
 	{
 		System.out.println(a*a);
 	}
@@ -28,16 +28,18 @@ class eee extends fff
 
 
 
-public class OverridingOverloadingTest {
+public class OverridingOverloadingTest extends eee{
 
 	public static void main(String[] args) {
 	
 		eee  xyz=new eee();
-		
+//		
 		xyz.m1(100);
+//		
+//		xyz.m2(200);
+//		xyz.m2(10,20);
 		
-		xyz.m2(200);
-		xyz.m2(10,20);
+		
 	}
 
 }

@@ -6,13 +6,97 @@
   </listeners>
   <test thread-count="5" name="Keydemand Tests(failed)">
     <classes>
+      <class name="testCases.TC_AddAdmin_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="AddAdmin_Test"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_AddAdmin_Test -->
+      <class name="testCases.TC_BrandPage_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="BrandPage_Test"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_BrandPage_Test -->
+      <class name="testCases.TC_Settings_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="Test_Settings"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_Settings_Test -->
       <class name="testCases.TC_Notifications_001">
         <methods>
           <include name="SetUp"/>
-          <include name="Test_Notification"/>
           <include name="Tear"/>
+          <include name="Test_Notification"/>
         </methods>
       </class> <!-- testCases.TC_Notifications_001 -->
+      <class name="testCases.TC_AddSeller_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="Test_AddSeller"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_AddSeller_Test -->
+      <class name="testCases.TC_AddminSearchBox_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="searchByMobilenum"/>
+          <include name="searchByName"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_AddminSearchBox_Test -->
+      <class name="testCases.TC_LoginDDT_01">
+        <methods>
+          <include name="Test_Login" invocation-numbers="0 1"/>
+          <include name="SetUp"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_LoginDDT_01 -->
+      <class name="testCases.TC_Buyersearch_Test">
+        <methods>
+          <include name="Test_searchname"/>
+          <include name="SetUp"/>
+          <include name="Test_searchDestination"/>
+          <include name="Tear"/>
+          <include name="Test_EnterpriseName"/>
+          <include name="Test_searchCity"/>
+        </methods>
+      </class> <!-- testCases.TC_Buyersearch_Test -->
+      <class name="testCases.TC_EditAdmin_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="Tear"/>
+          <include name="Test_EditAdmin"/>
+        </methods>
+      </class> <!-- testCases.TC_EditAdmin_Test -->
+      <class name="testCases.TC_Login_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="Tear"/>
+          <include name="Test_Login" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testCases.TC_Login_Test -->
+      <class name="testCases.TC_EnterpriseEnquiry_001">
+        <methods>
+          <include name="SetUp"/>
+          <include name="Test_EnterprisesolnsForm"/>
+          <include name="Tear"/>
+        </methods>
+      </class> <!-- testCases.TC_EnterpriseEnquiry_001 -->
+      <class name="testCases.TC_SellerSearch_Test">
+        <methods>
+          <include name="Test_SellersearchEnterpriseName"/>
+          <include name="SetUp"/>
+          <include name="Tear"/>
+          <include name="Test_SellersearchDestination"/>
+          <include name="Test_Sellersearch"/>
+          <include name="Test_SellersearchCity"/>
+        </methods>
+      </class> <!-- testCases.TC_SellerSearch_Test -->
     </classes>
   </test> <!-- Keydemand Tests(failed) -->
 </suite> <!-- Failed suite [KeyDeamnd Suite] -->
