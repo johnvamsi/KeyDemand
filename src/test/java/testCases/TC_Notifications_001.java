@@ -1,8 +1,8 @@
 package testCases;
 
-import org.junit.Assert;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import pageObjects.LoginPage;
 import pageObjects.NotificationsPage;
 import testBase.KeyDemand_BaseClass;

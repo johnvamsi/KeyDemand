@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 public class Assertionstype {
 	
 	
-@Test
+//@Test
 	void test_hardassertions()
 	{
 		Assert.assertEquals("abc","xyz"); //Failed

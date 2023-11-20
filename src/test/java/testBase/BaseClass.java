@@ -29,37 +29,21 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	public WebDriver driver;
 	public  Logger logger;
+	public ResourceBundle rb;
 	
 	@BeforeClass
 	//@Parameters({"browser"})
 	public void SetUp( ) throws InterruptedException
 	{
 		logger = LogManager.getLogger(getClass());
-		
+		rb=ResourceBundle.getBundle("config");
 		
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		driver.get("https://demo.opencart.com/");
+		driver.get("https://devkeydemands.underdev.in/login");
 		Thread.sleep(3000);
 		
 		logger.info("Launched Chrome Browser");
-		
-		
-		/*
-		 * if(br.equals("chrome")) { WebDriverManager.chromedriver().setup(); driver=new
-		 * ChromeDriver(); driver.get("https://demo.opencart.com/"); Thread.sleep(3000);
-		 * 
-		 * logger.info("Launched Chrome Browser"); } else if(br.equals("edge")) {
-		 * WebDriverManager.edgedriver().setup(); driver=new EdgeDriver();
-		 * driver.get("https://demo.opencart.com/"); Thread.sleep(3000);
-		 * logger.info("Launched Edge Browser");
-		 * 
-		 * } else if(br.equals("firefox")) { WebDriverManager.firefoxdriver().setup();
-		 * driver=new FirefoxDriver(); driver.get("https://demo.opencart.com/");
-		 * Thread.sleep(3000); logger.info("Launched Firefox Browser");
-		 * 
-		 * }
-		 */
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
